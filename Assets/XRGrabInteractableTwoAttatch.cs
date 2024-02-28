@@ -10,6 +10,7 @@ public class XRGrabInteractableTwoAttatch : XRGrabInteractable
 
     protected override void OnSelectEntered(SelectEnterEventArgs args)
     {
+        //check if hand is grabbing an object or not
         if (args.interactorObject.transform.CompareTag("Left Hand"))
             attachTransform = leftAttachTransform;
         
